@@ -20,7 +20,7 @@ def includeme(configurator):
     :param pyramid.configurator.Configurator configurator: pyramid's
         configurator object
     """
-    configurator.add_route('decoy', '/')
+    configurator.add_route('decoy', pattern='/*p')
     configurator.add_view('pyramid_decoy.views.decoy', route_name='decoy')
     # TODO:
     # 1. Read config. - redir address
