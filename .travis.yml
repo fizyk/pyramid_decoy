@@ -6,12 +6,12 @@ python:
     - "3.3"
     - "3.4"
 install:
-    - "python setup.py install"
+    - "python setup.py develop"
     - "pip install pyramid_decoy[tests] coveralls pylama"
     # manually install wheel for deployment
     - "pip install wheel"
 script:
-    - "py.test"
+    - "py.test -v --cov pyramid_decoy tests/"
     - "pylama"
 after_success:
     - coveralls
