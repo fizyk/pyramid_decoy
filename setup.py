@@ -61,4 +61,8 @@ setup(
     include_package_data=True,
     zip_safe=False,
     extras_require=extras_require,
+    entry_points="""
+      [paste.app_factory]
+      decoy = pyramid_decoy.app:main
+    """
 )
