@@ -3,6 +3,7 @@
 #
 # This module is part of pyramid_decoy and is released under
 # the MIT License (MIT): http://opensource.org/licenses/MIT
+"""Main decoy module."""
 
 import logging
 

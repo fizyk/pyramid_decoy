@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+"""pyramid_decoy setup module."""
 
 import os
 import re
@@ -11,6 +12,11 @@ with open(os.path.join(here, 'pyramid_decoy', '__init__.py')) as v_file:
 
 
 def read(fname):
+    """
+    Read file passed by filename.
+
+    :param str fname: filename
+    """
     return open(os.path.join(here, fname)).read()
 
 requirements = [

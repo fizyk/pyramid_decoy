@@ -1,3 +1,4 @@
+"""Test default decoy behaviour."""
 
 
 def test_decoy(decoy_app):
