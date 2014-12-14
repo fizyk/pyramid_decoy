@@ -19,10 +19,8 @@ def includeme(configurator):
     :param pyramid.configurator.Configurator configurator: pyramid's
         configurator object
     """
-    import ipdb
-    ipdb.set_trace()
-    configurator.add_route('redirect', '/')
-    configurator.add_view('pyramid_decoy.views.redirect_view', 'redirect')
+    configurator.add_route('decoy', '/')
+    configurator.add_view('pyramid_decoy.views.decoy', route_name='decoy')
     # TODO:
     # 1. Read config. - redir address
     # 2. Add redirecting view (root) to redir address read from config
