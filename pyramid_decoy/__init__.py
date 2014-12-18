@@ -13,6 +13,9 @@ __version__ = '0.0.0'
 logger = logging.getLogger(__name__)
 
 
+SETTINGS_PREFIX = 'decoy'
+
+
 def includeme(configurator):
     """
     Configure decoy plugin on pyramid application.
@@ -20,9 +23,23 @@ def includeme(configurator):
     :param pyramid.configurator.Configurator configurator: pyramid's
         configurator object
     """
+    configurator.registry['decoy'] = get_decoy_settings(
+        configurator.get_settings()
+    )
     configurator.add_route('decoy', pattern='/*p')
     configurator.add_view('pyramid_decoy.views.decoy', route_name='decoy')
-    # TODO:
-    # 1. Read config. - redir address
-    # 2. Add redirecting view (root) to redir address read from config
-    # 3. Test solution
+
+
+def get_decoy_settings(settings):
+    """
+    Extract decoy settings out of all.
+
+    :param dict settings: pyramid app settings
+    :returns: decoy settings
+    :rtype: dict
+    """
+    return {
+        k.split('.', 1)[-1]: v
+        for k, v in settings.iteritems()
+        if k[:len(SETTINGS_PREFIX)] == SETTINGS_PREFIX
+    }
