@@ -40,6 +40,6 @@ def get_decoy_settings(settings):
     """
     return {
         k.split('.', 1)[-1]: v
-        for k, v in settings.iteritems()
+        for k, v in settings.items()
         if k[:len(SETTINGS_PREFIX)] == SETTINGS_PREFIX
     }
