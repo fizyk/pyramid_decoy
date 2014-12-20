@@ -14,3 +14,14 @@ script:
     - "pylama"
 after_success:
     - coveralls
+
+deploy:
+    provider: pypi
+    user: fizyk
+    password:
+        secure: IheB1tyDOLJsBh86IPCF95x88u88iz/FRjoC/FdhJEQ+u3MidFDrUKhVeG5sisAnjYKdVfkrrygLfOd8TvGHYgvy+lnKFjpLFt76qLqAgnYoOgQcXs9vFPjRExXeM19G9RwEIfXh435M2WOZEZM8HU3jiva0Xol3ebqVu7o1s18=
+    on:
+        tags: true
+        all_branches: true
+        repo: fizyk/pyramid_decoy
+    distributions: "sdist bdist_egg bdist_wheel"
