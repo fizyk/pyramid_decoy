@@ -24,4 +24,4 @@ deploy:
         tags: true
         all_branches: true
         repo: fizyk/pyramid_decoy
-    distributions: "sdist bdist_egg bdist_wheel"
+    distributions: "sdist bdist_wheel"
