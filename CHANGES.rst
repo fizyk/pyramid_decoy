@@ -1,6 +1,7 @@
 CHANGELOG
 =========
 
-0.1.0
+unreleased
 -------
-- some changes [by someone]
+
+- initial release allowing to redirect all links section assigned to decoy to one url.
