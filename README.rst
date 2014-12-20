@@ -5,8 +5,8 @@ pyramid_decoy
     :target: https://pypi.python.org/pypi/pyramid_decoy/
     :alt: Latest PyPI version
 
-.. image:: https://readthedocs.org/projects/pyramid_decoy/badge/?version=v0.0.0
-    :target: https://readthedocs.org/projects/pyramid_decoy/?badge=v0.0.0
+.. image:: https://readthedocs.org/projects/pyramid_decoy/badge/?version=v0.1.0
+    :target: https://readthedocs.org/projects/pyramid_decoy/?badge=v0.1.0
     :alt: Documentation Status
 
 .. image:: https://pypip.in/d/pyramid_decoy/badge.png
@@ -28,16 +28,16 @@ pyramid_decoy
 Package status
 --------------
 
-.. image:: https://travis-ci.org/fizyk/pyramid_decoy.svg?branch=v0.0.0
+.. image:: https://travis-ci.org/fizyk/pyramid_decoy.svg?branch=v0.1.0
     :target: https://travis-ci.org/fizyk/pyramid_decoy
     :alt: Tests
 
-.. image:: https://coveralls.io/repos/fizyk/pyramid_decoy/badge.png?branch=v0.0.0
-    :target: https://coveralls.io/r/fizyk/pyramid_decoy?branch=v0.0.0
+.. image:: https://coveralls.io/repos/fizyk/pyramid_decoy/badge.png?branch=v0.1.0
+    :target: https://coveralls.io/r/fizyk/pyramid_decoy?branch=v0.1.0
     :alt: Coverage Status
 
-.. image:: https://requires.io/github/fizyk/pyramid_decoy/requirements.svg?tag=v0.0.0
-     :target: https://requires.io/github/fizyk/pyramid_decoy/requirements/?tag=v0.0.0
+.. image:: https://requires.io/github/fizyk/pyramid_decoy/requirements.svg?tag=v0.1.0
+     :target: https://requires.io/github/fizyk/pyramid_decoy/requirements/?tag=v0.1.0
      :alt: Requirements Status
 
 pyramid_decoy, a simple pyramid app, which solely purpose is to redirect traffic away
