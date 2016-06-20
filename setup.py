@@ -20,13 +20,13 @@ def read(fname):
     return open(os.path.join(here, fname)).read()
 
 requirements = [
-    'pyramid',
+    'pyramid==1.7.0',
 ]
 
 test_requires = [
-    'pytest',
-    'pytest-cov',
-    'pytest_pyramid',
+    'pytest==2.9.2',
+    'pytest-cov==2.2.1',
+    'pytest_pyramid==0.2.0',
 ]
 
 extras_require = {
@@ -39,9 +39,7 @@ setup(
     version=package_version,
     description='It\'s a python package template only',
     long_description=(
-        read('README.rst')
-        + '\n\n' +
-        read('CHANGES.rst')
+        read('README.rst') + '\n\n' + read('CHANGES.rst')
     ),
     keywords='python template',
     author='Grzegorz Sliwinski',

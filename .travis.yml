@@ -1,14 +1,14 @@
 language: python
+sudo: false
 python:
     - "2.7"
     - "3.2"
     - "3.3"
     - "3.4"
 install:
+    - "pip install -r requirements-test.txt"
     - "python setup.py develop"
-    - "pip install pyramid_decoy[tests] coveralls pylama"
-    # manually install wheel for deployment
-    - "pip install wheel"
+    - "pip install pyramid_decoy[tests] coveralls wheel"
 script:
     - "py.test -v --cov pyramid_decoy tests/"
     - "pylama"
