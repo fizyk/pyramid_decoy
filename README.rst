@@ -1,27 +1,25 @@
 pyramid_decoy
 =============
 
-.. image:: https://pypip.in/v/pyramid_decoy/badge.png
+
+
+.. image:: https://img.shields.io/pypi/v/pyramid_decoy.svg
     :target: https://pypi.python.org/pypi/pyramid_decoy/
     :alt: Latest PyPI version
 
-.. image:: https://readthedocs.org/projects/pyramid_decoy/badge/?version=v0.1.0
-    :target: https://readthedocs.org/projects/pyramid_decoy/?badge=v0.1.0
+.. image:: https://readthedocs.or/projects/pyramid_decoy/badge/?version=v0.1.0
+    :target: http://pyramid_decoy.readthedocs.io/en/v0.1.0/
     :alt: Documentation Status
 
-.. image:: https://pypip.in/d/pyramid_decoy/badge.png
-    :target: https://pypi.python.org/pypi/pyramid_decoy/
-    :alt: Number of PyPI downloads
-
-.. image:: https://pypip.in/wheel/pyramid_decoy/badge.png
+.. image:: https://img.shields.io/pypi/wheel/pyramid_decoy.svg
     :target: https://pypi.python.org/pypi/pyramid_decoy/
     :alt: Wheel Status
 
-.. image:: https://pypip.in/egg/pyramid_decoy/badge.png
+.. image:: https://img.shields.io/pypi/pyversions/pyramid_decoy.svg
     :target: https://pypi.python.org/pypi/pyramid_decoy/
-    :alt: Egg Status
+    :alt: Supported Python Versions
 
-.. image:: https://pypip.in/license/pyramid_decoy/badge.png
+.. image:: https://img.shields.io/pypi/l/pyramid_decoy.svg
     :target: https://pypi.python.org/pypi/pyramid_decoy/
     :alt: License
 
