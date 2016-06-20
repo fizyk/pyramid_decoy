@@ -20,7 +20,7 @@ def read(fname):
     return open(os.path.join(here, fname)).read()
 
 requirements = [
-    'pyramid==1.7.0',
+    'pyramid',
 ]
 
 test_requires = [
