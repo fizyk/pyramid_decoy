@@ -2,13 +2,9 @@
 """pyramid_decoy setup module."""
 
 import os
-import re
 from setuptools import setup, find_packages
 
 here = os.path.dirname(__file__)
-with open(os.path.join(here, 'pyramid_decoy', '__init__.py')) as v_file:
-    package_version = re.compile(
-        r".*__version__ = '(.*?)'", re.S).match(v_file.read()).group(1)
 
 
 def read(fname):
@@ -18,6 +14,7 @@ def read(fname):
     :param str fname: filename
     """
     return open(os.path.join(here, fname)).read()
+
 
 requirements = [
     'pyramid',
@@ -36,7 +33,7 @@ extras_require = {
 
 setup(
     name='pyramid_decoy',
-    version=package_version,
+    version='0.1.0',
     description='It\'s a python package template only',
     long_description=(
         read('README.rst') + '\n\n' + read('CHANGES.rst')
