@@ -4,4 +4,4 @@ pylama==7.4.3
 pycodestyle==2.4.0
 pyflakes==1.6.0
 pydocstyle==2.1.1
-pyramid==1.9.1
+pyramid==1.9.2
