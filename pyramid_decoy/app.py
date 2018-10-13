@@ -8,7 +8,7 @@
 from pyramid.config import Configurator
 
 
-def main(global_config, **settings):
+def main(global_config, **settings):  # pylint:disable=unused-argument
     """Build a Pyramid WSGI application."""
     config = Configurator(settings=settings)
     return config.make_wsgi_app()
