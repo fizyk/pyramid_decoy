@@ -4,13 +4,7 @@
 # This module is part of pyramid_decoy and is released under
 # the MIT License (MIT): http://opensource.org/licenses/MIT
 """Main decoy module."""
-
-import logging
-
 __version__ = '0.1.0'
-
-
-logger = logging.getLogger(__name__)
 
 
 SETTINGS_PREFIX = 'decoy'
