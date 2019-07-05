@@ -21,7 +21,7 @@ requirements = [
 ]
 
 test_requires = [
-    'pytest==5.0.0',
+    'pytest==5.0.1',
     'pytest-cov==2.7.1',
     'pytest-pyramid==0.3.1',
 ]
