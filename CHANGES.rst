@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-unreleased
+0.2.0
 ----------
 
 - [enhancement] switched CI to github actions

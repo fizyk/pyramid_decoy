@@ -4,7 +4,7 @@
 # This module is part of pyramid_decoy and is released under
 # the MIT License (MIT): http://opensource.org/licenses/MIT
 """Main decoy module."""
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 
 SETTINGS_PREFIX = "decoy"

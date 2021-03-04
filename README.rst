@@ -7,8 +7,8 @@ pyramid_decoy
     :target: https://pypi.python.org/pypi/pyramid_decoy/
     :alt: Latest PyPI version
 
-.. image:: https://readthedocs.or/projects/pyramid_decoy/badge/?version=v0.1.0
-    :target: http://pyramid_decoy.readthedocs.io/en/v0.1.0/
+.. image:: https://readthedocs.or/projects/pyramid_decoy/badge/?version=v0.2.0
+    :target: http://pyramid_decoy.readthedocs.io/en/v0.2.0/
     :alt: Documentation Status
 
 .. image:: https://img.shields.io/pypi/wheel/pyramid_decoy.svg
