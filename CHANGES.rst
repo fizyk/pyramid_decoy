@@ -6,6 +6,7 @@ unreleased
 
 - [enhancement] switched CI to github actions
 - [enhancement] blackify code
+- [python] support only python 3.8 and up
 
 0.1.0
 ----------
