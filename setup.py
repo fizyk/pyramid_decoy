@@ -17,57 +17,52 @@ def read(fname):
 
 
 requirements = [
-    'pyramid',
+    "pyramid",
 ]
 
 test_requires = [
-    'pytest==5.0.1',
-    'pytest-cov==2.7.1',
-    'pytest-pyramid==0.3.1',
+    "pytest==5.0.1",
+    "pytest-cov==2.7.1",
+    "pytest-pyramid==0.3.1",
 ]
 
-extras_require = {
-    'docs': ['sphinx'],
-    'tests': test_requires
-}
+extras_require = {"docs": ["sphinx"], "tests": test_requires}
 
 setup(
-    name='pyramid_decoy',
-    version='0.1.0',
-    description='It\'s a python package template only',
-    long_description=(
-        read('README.rst') + '\n\n' + read('CHANGES.rst')
-    ),
-    keywords='python template',
-    author='Grzegorz Sliwinski',
-    author_email='fizyk@fizyk.net.pl',
-    url='https://github.com/fizyk/pyramid_decoy',
+    name="pyramid_decoy",
+    version="0.1.0",
+    description="It's a python package template only",
+    long_description=(read("README.rst") + "\n\n" + read("CHANGES.rst")),
+    keywords="python template",
+    author="Grzegorz Sliwinski",
+    author_email="fizyk@fizyk.net.pl",
+    url="https://github.com/fizyk/pyramid_decoy",
     license="MIT License",
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
-        'Environment :: Web Environment',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
-        'Natural Language :: English',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
-        'Topic :: Software Development :: Libraries :: Python Modules',
+        "Development Status :: 5 - Production/Stable",
+        "Environment :: Web Environment",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Natural Language :: English",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Topic :: Software Development :: Libraries :: Python Modules",
     ],
-    package_dir={'': 'src'},
-    packages=find_packages('src'),
+    package_dir={"": "src"},
+    packages=find_packages("src"),
     install_requires=requirements,
     tests_require=test_requires,
-    test_suite='tests',
+    test_suite="tests",
     include_package_data=True,
     zip_safe=False,
     extras_require=extras_require,
     entry_points="""
       [paste.app_factory]
       decoy = pyramid_decoy.app:main
-    """
+    """,
 )

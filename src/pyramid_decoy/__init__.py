@@ -4,10 +4,10 @@
 # This module is part of pyramid_decoy and is released under
 # the MIT License (MIT): http://opensource.org/licenses/MIT
 """Main decoy module."""
-__version__ = '0.1.0'
+__version__ = "0.1.0"
 
 
-SETTINGS_PREFIX = 'decoy'
+SETTINGS_PREFIX = "decoy"
 
 
 def includeme(configurator):
@@ -17,11 +17,11 @@ def includeme(configurator):
     :param pyramid.configurator.Configurator configurator: pyramid's
         configurator object
     """
-    configurator.registry['decoy'] = get_decoy_settings(
+    configurator.registry["decoy"] = get_decoy_settings(
         configurator.get_settings()
     )
-    configurator.add_route('decoy', pattern='/*p')
-    configurator.add_view('pyramid_decoy.views.decoy', route_name='decoy')
+    configurator.add_route("decoy", pattern="/*p")
+    configurator.add_view("pyramid_decoy.views.decoy", route_name="decoy")
 
 
 def get_decoy_settings(settings):
@@ -33,7 +33,7 @@ def get_decoy_settings(settings):
     :rtype: dict
     """
     return {
-        k.split('.', 1)[-1]: v
+        k.split(".", 1)[-1]: v
         for k, v in settings.items()
-        if k[:len(SETTINGS_PREFIX)] == SETTINGS_PREFIX
+        if k[: len(SETTINGS_PREFIX)] == SETTINGS_PREFIX
     }
