@@ -17,5 +17,5 @@ def decoy(request):
     :returns: HTTPFound response
     :rtype: pyramid.httpexceptions.HTTPFound
     """
-    decoy_url = request.registry['decoy']['url']
+    decoy_url = request.registry["decoy"]["url"]
     return HTTPFound(location=decoy_url)
