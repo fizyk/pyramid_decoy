@@ -21,9 +21,9 @@ requirements = [
 ]
 
 test_requires = [
-    "pytest==5.0.1",
-    "pytest-cov==2.7.1",
-    "pytest-pyramid==0.3.1",
+    "pytest",
+    "pytest-cov",
+    "pytest-pyramid",
 ]
 
 extras_require = {"docs": ["sphinx"], "tests": test_requires}
