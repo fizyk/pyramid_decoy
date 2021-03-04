@@ -23,21 +23,6 @@ pyramid_decoy
     :target: https://pypi.python.org/pypi/pyramid_decoy/
     :alt: License
 
-Package status
---------------
-
-.. image:: https://travis-ci.org/fizyk/pyramid_decoy.svg?branch=v0.1.0
-    :target: https://travis-ci.org/fizyk/pyramid_decoy
-    :alt: Tests
-
-.. image:: https://coveralls.io/repos/fizyk/pyramid_decoy/badge.png?branch=v0.1.0
-    :target: https://coveralls.io/r/fizyk/pyramid_decoy?branch=v0.1.0
-    :alt: Coverage Status
-
-.. image:: https://requires.io/github/fizyk/pyramid_decoy/requirements.svg?tag=v0.1.0
-     :target: https://requires.io/github/fizyk/pyramid_decoy/requirements/?tag=v0.1.0
-     :alt: Requirements Status
-
 pyramid_decoy, a simple pyramid app, which solely purpose is to redirect traffic away
 to configured location, with hooks (in the future) to be able to plug in a tracking code.
 
