@@ -2,7 +2,7 @@
 from pytest_pyramid import factories
 
 decoy_config = factories.pyramid_config(  # pylint:disable=invalid-name
-    {
+    settings={
         "pyramid.includes": ["pyramid_decoy"],
         "decoy.url": "http://www.example.com/",
     }
