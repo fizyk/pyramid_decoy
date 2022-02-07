@@ -3,9 +3,4 @@
 from setuptools import setup
 
 
-setup(
-    entry_points="""
-      [paste.app_factory]
-      decoy = pyramid_decoy.app:main
-    """,
-)
+setup()
